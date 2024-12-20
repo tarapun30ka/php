@@ -8,7 +8,7 @@ declare(strict_types=1);
    - С помощью функции getdate() присвойте переменной $hour текущий час
    */
 $now = time();
-$birthday = mktime(8, 30, 0, 4, 22, (int)date('Y'));
+$birthday = mktime(0, 0, 0, 8, 30, (int)date('Y'));
 $hour = getdate($now)['hours'];
 ?>
 <!DOCTYPE html>

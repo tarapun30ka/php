@@ -50,7 +50,7 @@ $rows = rand(1, 10);
 		  - Фоновый цвет ячеек первой строки и первого столбца должен быть отличным от фонового цвета таблицы
 		  */
 
-	$table = '<table>';
+	$table = '<table><tbody>';
 	// echo '<table>';
 	for ($i = 1; $i <= $cols; $i++) {
 		// echo '<tr>';
@@ -67,7 +67,7 @@ $rows = rand(1, 10);
 		$table .= '</tr>';
 	}
 	// echo '</table>';
-	$table .= '</table>';
+	$table .= '</tbody></table>';
 	echo $table;
 	?>
 </body>

@@ -25,7 +25,7 @@ function getTable(int $cols = 7, int $rows = 7, string $color = 'orange'): int
 {
 	static $count = 0;
 	$count++;
-	$table = '<table>';
+	$table = '<table><tbody>';
 	for ($i = 1; $i <= $cols; $i++) {
 		$table .= '<tr>';
 		for ($j = 1; $j <= $rows; $j++) {
@@ -37,7 +37,7 @@ function getTable(int $cols = 7, int $rows = 7, string $color = 'orange'): int
 		}
 		$table .= '</tr>';
 	}
-	$table .= '</table>';
+	$table .= '</tbody></table>';
 	echo $table;
 	return $count;
 }
