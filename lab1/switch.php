@@ -41,8 +41,8 @@ switch ($day) {
 	ЗАДАНИЕ 3
 	- Выполните задание 2 используя управляющую конструкцию match. Результат сохраните в файле match.php.
 	*/
-    include "match.php";
-    echo 'Результат из файла match.php: ' . match_value($day);
+    $matchResult = include "match.php";
+    echo "<br><br>Результат из match.php: {$matchResult}"
 	?> 
 </body>
 </html>
