@@ -6,7 +6,7 @@
 */
 
     $name = 'Лера';
-    $age = 21;
+    $age = 20;
 
 ?>
 <!DOCTYPE html>
