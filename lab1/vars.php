@@ -21,17 +21,11 @@
     
     <p>Изолирование кода:</p>
     <p>Меня зовут: <?= $name?></p>
-    <p>Мне <?= $age?> год</p>
+    <p>Мне <?= $age?> лет</p>
     <p>Тип переменной $name: <?=var_dump($name);?></p>
     <p>Тип переменной $age: <?=var_dump($age);?></p>
 
 	<?php
-    // echo "Меня зовут: ", $name," ";
-    // echo "Мне $age год ";
-    // echo  gettype($name), " ";
-    // echo gettype($age);
-
-    // echo nl2br("\nИзмените код так, чтобы каждая фраза начиналась с новой строки\n");
 
     	/*
 	ЗАДАНИЕ 2
@@ -44,24 +38,13 @@
 	*/
 
     echo 'Меня зовут: ' . $name . '<br>';
-    echo 'Мне '. $age . ' год ' . '<br>';
+    echo 'Мне '. $age . ' лет ' . '<br>';
     var_dump($name);
     echo '<br>';
     var_dump($age);
 
-
-
-    // echo "Удаление переменных через unset()" . '<br>';
     unset( $age, $name );
        
     ?>
 </body>
 </html>
-
-<!-- // echo nl2br("\nИзолирование кода PHP от HTML-разметки с помощью шаблона\n\n");
-
-
-
-        // include 'newline.php';
-        // echo nl2br($echo_attribute);
-        // foreach($types as $type) {echo $type . '<br>';} -->
